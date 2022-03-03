@@ -104,6 +104,7 @@ class JXT {
 
     add(ParentJXT, fieldName, field) {
         field.enumerable = true;
+        field.configurable = true;
         Object.defineProperty(ParentJXT.prototype, fieldName, field);
     }
 
