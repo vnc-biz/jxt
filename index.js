@@ -107,6 +107,7 @@ JXT.prototype.extend = function (ParentJXT, ChildJXT, multiName, hideSingle) {
 
 JXT.prototype.add = function (ParentJXT, fieldName, field) {
     field.enumerable = true;
+    field.configurable = true;
     Object.defineProperty(ParentJXT.prototype, fieldName, field);
 };
 
